@@ -1,0 +1,49 @@
+.in-btn-icon {
+  margin: 0;
+  padding: 0;
+}
+
+.color-picker {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 0;
+  margin: 0;
+}
+/* .color-picker::-webkit-color-swatch {
+  border-radius: 5px;
+  border: solid blue;
+  padding: 0;
+  margin: 0;
+
+}
+.color-picker::-moz-color-swatch {
+  border-radius: 5px;
+  border: solid blue;
+  padding: 0;
+  margin: 0;
+
+} */
+
+::-webkit-color-swatch-wrapper {
+  padding: 0;
+}
+
+::-webkit-color-swatch {
+  border: 1px solid #ced6e0;
+  border-radius: 3px;
+}
+
+::-moz-color-swatch,
+::-moz-focus-inner{
+  border: 0;
+}
+
+::-moz-focus-inner{
+  padding: 0;
+}
