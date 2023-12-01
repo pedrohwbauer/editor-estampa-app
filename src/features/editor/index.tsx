@@ -10,11 +10,16 @@ const Editor: React.FC<EditorProps> = () => {
 
   useEffect(() => {
     const canvas = new fabric.Canvas('c', {
-      width: 800,
-      height: 800,
+      width: 120,
+      height: 200,
     });
 
-    setCanvas(canvas)
+    setCanvas(canvas);
+
+    // const canvasHTML = document.getElementById("c") as HTMLCanvasElement;
+    // const ctx = canvasHTML.getContext("2d")
+
+    // ctx!.scale(0.1, 0.1);
 
     return () => {
       setCanvas(undefined);
@@ -24,7 +29,9 @@ const Editor: React.FC<EditorProps> = () => {
 
   return <>
     <EditorUI canvas={canvas}></EditorUI>
-    <canvas id="c"></canvas>
+    <div className="img-container">
+      <canvas id="c"></canvas>
+    </div>
     <Paint canvas={canvas}></Paint>
   </>;
 

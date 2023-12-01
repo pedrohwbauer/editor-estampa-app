@@ -3,6 +3,18 @@
   padding: 0;
 }
 
+#c {
+  border: 1px solid #000;
+}
+.img-container {
+  background-image: url("/white-tshirt.jpg");
+  background-repeat: no-repeat, no-repeat;
+  background-size: 320px 400px;
+  background-position: top left;
+  padding: 95px;
+} 
+
+
 .color-picker {
   -webkit-appearance: none;
   -moz-appearance: none;
